@@ -1,20 +1,20 @@
 #!/bin/sh
 
-DEST="/run/media/deon/C61AEAF91AEAE601"
+DEST="/run/media/deongracias/C61AEAF91AEAE601"
 SOURCES=( \
-    "/home/deon/.config/aliases" \
-    "/home/deon/.config/nvim/init.vim" \
-    "/home/deon/.config/fish" \
-    "/home/deon/.config/alacritty" \
-    "/home/deon/Personal" \
-    "/home/deon/Pictures" \
-    "/home/deon/Coding" \
-    "/home/deon/College" \
-    "/home/deon/Documents" \
-    "/home/deon/Downloads" \
-    "/home/deon/Music" \
-    "/home/deon/Videos" \
-    "/home/deon/Scripts" \
+    "/home/deongracias/.config/aliases" \
+    "/home/deongracias/.config/nvim/init.vim" \
+    "/home/deongracias/.config/fish" \
+    "/home/deongracias/.config/alacritty" \
+    "/home/deongracias/Personal" \
+    "/home/deongracias/Pictures" \
+    "/home/deongracias/Coding" \
+    "/home/deongracias/College" \
+    "/home/deongracias/Documents" \
+    "/home/deongracias/Downloads" \
+    "/home/deongracias/Music" \
+    "/home/deongracias/Videos" \
+    "/home/deongracias/Scripts" \
 )
 
 for file in ${SOURCES[@]}; do

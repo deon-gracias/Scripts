@@ -6,12 +6,7 @@ EXCLUDE="rsync-exclude-file.txt"
 user="deongracias"
 
 SOURCES=(
-    "/home/$user/.config/aliases"
-    "/home/$user/.config/nvim"
-    "/home/$user/.config/fish"
-    "/home/$user/.config/kitty"
-    "/home/$user/.config/alacritty"
-    "/home/$user/.config/setup.sh"
+    "/home/$user/dotfiles"
     "/home/$user/Personal"
     "/home/$user/Pictures"
     "/home/$user/Coding"
@@ -73,11 +68,7 @@ yarn-error.log*
 " > $EXCLUDE
 
 for entry in ${SOURCES[@]}; do
-    if [[ "$entry" == *".config"* ]]; then
-        rsync -auvhp --delete --exclude-from=$EXCLUDE $entry $DEST/config
-    else
-        rsync -auvhp --delete --exclude-from=$EXCLUDE $entry $DEST
-    fi
+    rsync -auvhp --delete --exclude-from=$EXCLUDE $entry $DEST
 done
 
 rm $EXCLUDE

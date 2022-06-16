@@ -16,6 +16,7 @@ SOURCES=(
     "/home/$user/Music"
     "/home/$user/Videos"
     "/home/$user/Scripts"
+    "/home/$user/go"
 )
 
 echo "
@@ -65,6 +66,7 @@ ios
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+go/bin
 " > $EXCLUDE
 
 for entry in ${SOURCES[@]}; do

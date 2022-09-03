@@ -1,21 +1,19 @@
 #!/bin/sh
 
-DEST="/run/media/deongracias/C61AEAF91AEAE601"
+DEST="/run/media/$USER/3C64BD5A4D33BF62/"
 EXCLUDE="rsync-exclude-file.txt"
 
-user="deongracias"
-
 SOURCES=(
-    "/home/$user/dotfiles"
-    "/home/$user/Personal"
-    "/home/$user/Pictures"
-    "/home/$user/Coding"
-    "/home/$user/College"
-    "/home/$user/Documents"
-    "/home/$user/Downloads"
-    "/home/$user/Music"
-    "/home/$user/Videos"
-    "/home/$user/Scripts"
+    "/home/$USER/dotfiles"
+    "/home/$USER/Personal"
+    "/home/$USER/Pictures"
+    "/home/$USER/Coding"
+    "/home/$USER/College"
+    "/home/$USER/Documents"
+    "/home/$USER/Downloads"
+    "/home/$USER/Music"
+    "/home/$USER/Videos"
+    "/home/$USER/Scripts"
 )
 
 echo "
